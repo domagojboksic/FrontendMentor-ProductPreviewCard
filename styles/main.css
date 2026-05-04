@@ -27,6 +27,18 @@ main {
     flex-direction: column;
 }
 
+.add-item-to-cart, .current-price {
+    font-weight: 700;
+}
+
+h1, .current-price {
+    font-family: "Fraunces", sans-serif;
+}
+
+.product-type, .description, .usual-price {
+    color: hsl(228, 12%, 48%);
+}
+
 .image img{
     width: 100%;
     border-radius: 15px 15px 0 0;
@@ -59,10 +71,6 @@ main {
     align-self: center;
 }
 
-.add-item-to-cart, .current-price {
-    font-weight: 700;
-}
-
 .add-item-to-cart {
     background-color: hsl(158, 36%, 37%);
     border: none;
@@ -76,14 +84,6 @@ main {
 .add-item-to-cart:hover {
     background-color: hsl(158, 42%, 18%);
     cursor: pointer;
-}
-
-h1, .current-price {
-    font-family: "Fraunces", sans-serif;
-}
-
-.product-type, .description, .usual-price {
-    color: hsl(228, 12%, 48%);
 }
 
 @media (min-width: 768px) {
