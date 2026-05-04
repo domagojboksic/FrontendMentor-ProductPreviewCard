@@ -29,7 +29,6 @@ main {
 
 .image img{
     width: 100%;
-    height: auto;
     border-radius: 15px 15px 0 0;
 }
 
@@ -38,6 +37,10 @@ main {
     flex-direction: column;
     gap: 20px;
     padding: 30px;
+}
+
+.description {
+    line-height: 20px;
 }
 
 .price {
@@ -84,5 +87,32 @@ h1, .current-price {
 
 .product-type, .description, .usual-price {
     color: hsl(228, 12%, 48%);
+}
+
+@media (min-width: 768px) {
+    #container {
+        width: 600px;
+        background-color: white;
+        border-radius: 15px;
+    }
+    
+    main {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .image {
+        width: 50%;
+    }
+
+    .image img{
+        width: 100%;
+        border-radius: 15px 0 0 15px;
+    }
+
+    .info {
+        width: 50%;
+        justify-content: space-between;
+    }
 }
 
